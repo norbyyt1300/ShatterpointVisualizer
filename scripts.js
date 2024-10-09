@@ -1,21 +1,15 @@
 function tryToLoadSquadFromURL() {
-    var preexistingSPT = window.location.search;
-    if (preexistingSPT.length > 1) {
-        document.getElementById("sptInputField").value = preexistingSPT.replace("?", "");
-        var loadFromURL = false;
-        importSquad(loadFromURL);
+
+    if ((window.location.search.length > 1) && window.location.search.startsWith("?spt[")) {
+        console.log("SPT loaded from URL!");
+        document.getElementById("sptInputField").value = window.location.search.replace("?", "");
+        importSquad();
     }
 }
 
-function importSquad(loadFromURL) {
+function importSquad() {
 
-    var sptCodeString = document.getElementById("sptInputField").value;
-    
-    if (loadFromURL) {
-        if (window.location.search != sptCodeString) {
-            window.location.search = sptCodeString;
-        }
-    }
+    var sptCodeString = document.getElementById("sptInputField").value;   
 
     var unitSPTArray = sptCodeString.replace("[", "").replace("]", "").replace("spt", "").split(",");
     console.log("Units:", unitSPTArray);
@@ -25,6 +19,17 @@ function importSquad(loadFromURL) {
         console.log("UnitJSON:", idx, unitJSON);
         displayUnit(idx, unitJSON);
     });
+
+    saveSPTToURL(sptCodeString);
+}
+
+function saveSPTToURL(sptCodeString) {
+    
+    if ((window.location.search.replace("?", "") != sptCodeString) && (sptCodeString != "")) {
+        window.location.search = sptCodeString;
+        console.log("Saved SPT to url!");
+    }
+    
 }
 
 function lookUpUnitJSON(unitSPTCode) {

@@ -8,4 +8,13 @@
 
 .col {
     padding: 20px;
+
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+#mainContainer {
+    max-width: none;
+    text-align: center;
 }

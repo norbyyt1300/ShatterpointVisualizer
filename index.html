@@ -27,21 +27,27 @@
 <body class="m-0 border-0 m-0 border-0 bg-secondary">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
     <a class="navbar-brand" href="#">Shatterpoint Visualizer</a>
+    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <form class="form-inline my-2 my-lg-0">
         <input id="sptInputField" class="form-control mr-sm-2" type="text" placeholder="Paste SPT code here...">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="importSquad()">Import Squad</button>
+        <div class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="importSquad()">Import Squad</div>
       </form>
     </div>
+
+    <a class="btn btn-outline-primary my-2 my-sm-0" type="button" href="https://pointbreaksw.com/#/" target="_blank">Open Point Break</a>
+
   </nav>
 
-  <div class="container">
-    <div class="row">
+  <div id="mainContainer" class="container">
+    <div class="row w-100">
       <div class="col" id="unit1">
       </div>
       <div class="col" id="unit2">
@@ -49,7 +55,7 @@
       <div class="col" id="unit3">
       </div>
     </div>
-    <div class="row">
+    <div class="row w-100">
       <div class="col" id="unit4">
       </div>
       <div class="col" id="unit5">
