@@ -366,9 +366,9 @@ var CHARACTERS_JSON = [
     {
         "NAME": "General Veers, Tactical Genius",
         "SPT": "00460101",
-        "CARD_BACK": "SWP46-Veers-Back.png",
-        "STANCE1": "SWP46_Veers_Stance1.jpg",
-        "STANCE2": "SWP46_Veers_Stance2.jpg"
+        "CARD_BACK": "SWP46_Veers_Back.png",
+        "STANCE1": "SWP46_Veers_Stance1.png",
+        "STANCE2": "SWP46_Veers_Stance2.png"
     },
     {
         "NAME": "Gideon Hask, Inferno Squad",
@@ -681,15 +681,15 @@ var CHARACTERS_JSON = [
     {
         "NAME": "Snowtrooper Lieutenant",
         "SPT": "00460102",
-        "CARD_BACK": "SWP46-Lieutenant-Back.png",
-        "STANCE1": "SWP46_Lieutenant_Stance.jpg",
+        "CARD_BACK": "SWP46_Lieutenant_Back.png",
+        "STANCE1": "SWP46_Lieutenant_Stance.png",
         "STANCE2": ""
     },
     {
         "NAME": "Snowtroopers",
         "SPT": "00460103",
-        "CARD_BACK": "SWP46_Snowtroopers_Back.jpg",
-        "STANCE1": "SWP46_Snowtroopers_Stance.jpg",
+        "CARD_BACK": "SWP46_Snowtroopers_Back.png",
+        "STANCE1": "SWP46_Snowtroopers_Stance.png",
         "STANCE2": ""
     },
     {
